@@ -15,5 +15,5 @@ jobs:
       - name: Code static code S3
         run: |
           aws S3 sync ./ s3://jhc-gha-static-webside-demo/ \
-          --exclude "*"
+          --exclude "*" \
           --include "index.html"
